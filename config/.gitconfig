@@ -1,0 +1,35 @@
+[user]
+  name = Your Name
+  email = your@email.com
+
+[core]
+  editor = cursor --wait
+  # editor = code --wait
+  autocrlf = input
+  pager = delta
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = false
+
+[push]
+  autoSetupRemote = true
+
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  lg = log --oneline --graph --decorate --all
+  undo = reset HEAD~1 --mixed
+
+[delta]
+  navigate = true
+  side-by-side = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
