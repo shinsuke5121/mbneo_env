@@ -8,22 +8,18 @@ MacBook Neo の開発環境構成。以下の用途を想定:
 
 ## ディレクトリ構成
 
+`~/Developer/` を起点とする (macOS / Xcode の慣例に準拠)
+
 ```
 ~/
-├── Dev/                    # 開発作業のルート
-│   ├── projects/           # 個人プロジェクト
-│   │   ├── web/            # React / Next.js など Web 系
-│   │   ├── native/         # macOS / iOS アプリ
-│   │   └── scripts/        # 自動化スクリプト集
-│   ├── work/               # 仕事用プロジェクト
-│   └── sandbox/            # 実験・試作
-├── dotfiles/               # 設定ファイル管理 (Git管理推奨)
-│   ├── .zshrc
-│   ├── .gitconfig
-│   └── ssh/
-│       └── config
+├── Developer/              # 開発作業のルート
+│   ├── React/              # React / Next.js など Web フロントエンド
+│   ├── Mobile/             # macOS / iOS アプリ
+│   ├── Lab/                # 実験・検証・サンプルコード
+│   ├── Config/             # dotfiles・設定ファイルのバックアップ
+│   └── Scripts/            # 自作自動化スクリプト
 └── Mounts/                 # NAS・外部ストレージのマウントポイント
-    ├── nas/                # Pi5 NAS
+    ├── nas/                # Pi5 NAS (SSHFS)
     └── windows/            # Windows 共有フォルダ
 ```
 

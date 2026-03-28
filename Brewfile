@@ -46,16 +46,16 @@ brew "rustup"                # Rust (mise でも管理可能だが rustup が安
 # ----------------------------------------
 # コンテナ・仮想化
 # ----------------------------------------
-cask "docker"                # Docker Desktop
-cask "orbstack"              # Docker Desktop の軽量代替 (どちらか選択)
+cask "orbstack"              # Docker 互換。8GB RAM 環境では Docker Desktop より大幅に軽量
 
 # ----------------------------------------
 # リモート接続 (BTO Windows / Pi5 NAS クライアント)
 # ----------------------------------------
-cask "microsoft-remote-desktop"  # RDP クライアント (Windows)
+cask "microsoft-remote-desktop"  # RDP クライアント (Windows) - 標準的な操作向け
+cask "parsec"                # 低遅延リモートデスクトップ。Windows のスペックを活かした描画に優れる
 brew "openssh"               # SSH クライアント
-cask "cyberduck"             # SFTP / SMB / S3 ファイル転送
-# cask "transmit"            # 有料だが高機能な代替
+cask "cyberduck"             # SFTP / SMB / S3 ファイル転送 (無料)
+# cask "forklift"            # 有料だが高機能。NAS への大量ファイル転送に向く
 brew "sshfs"                 # SFTP をファイルシステムとしてマウント
 cask "macfuse"               # sshfs の依存 (旧: osxfuse)
 
@@ -77,6 +77,7 @@ cask "1password"             # パスワードマネージャ
 # cask "bitwarden"           # 無料の代替
 cask "hiddenbar"             # メニューバー整理
 cask "stats"                 # システムリソースモニタ (無料)
+cask "shottr"                # スクリーンショット・注釈ツール。エビデンス残しに優秀 (無料)
 cask "cleanmymac"            # システムクリーナ (有料)
 
 # ----------------------------------------

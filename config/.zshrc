@@ -49,9 +49,10 @@ alias gl='git log --oneline --graph --decorate'
 # ----------------------------------------
 # エイリアス - 開発ナビゲーション
 # ----------------------------------------
-alias dev='cd ~/Dev'
-alias proj='cd ~/Dev/projects'
-alias sandbox='cd ~/Dev/sandbox'
+alias dev='cd ~/Developer'
+alias react='cd ~/Developer/React'
+alias mobile='cd ~/Developer/Mobile'
+alias lab='cd ~/Developer/Lab'
 
 # ----------------------------------------
 # エイリアス - Pi5 NAS マウント
