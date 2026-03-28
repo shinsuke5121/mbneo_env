@@ -30,8 +30,8 @@ MacBook Neo の開発環境構成。以下の用途を想定:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 2. このリポジトリをクローン
-git clone <this-repo> ~/dotfiles/mbneo_env
-cd ~/dotfiles/mbneo_env
+git clone <this-repo> ~/Developer/Config/mbneo_env
+cd ~/Developer/Config/mbneo_env
 
 # 3. Brewfile から一括インストール
 brew bundle --file=Brewfile
@@ -41,6 +41,12 @@ bash scripts/setup_dirs.sh
 
 # 5. SSH 設定を適用
 bash scripts/setup_ssh.sh
+
+# 6. Node.js / Python / Claude Code をセットアップ
+bash scripts/setup_node.sh
+
+# 7. Claude Code の初回認証
+claude   # ブラウザが開き Anthropic アカウントでログイン
 ```
 
 ## ファイル一覧
@@ -50,6 +56,7 @@ bash scripts/setup_ssh.sh
 | `Brewfile` | Homebrew でインストールするアプリ・ツール一覧 |
 | `scripts/setup_dirs.sh` | ディレクトリ構造の作成 |
 | `scripts/setup_ssh.sh` | SSH config のセットアップ |
-| `scripts/setup_node.sh` | Node.js 環境 (fnm) のセットアップ |
+| `scripts/setup_node.sh` | Node.js / Python (mise) + Claude Code のセットアップ |
 | `config/ssh_config.template` | SSH config テンプレート |
 | `config/.zshrc` | zsh 設定ファイル |
+| `config/.mise.toml` | mise グローバルバージョン設定 |

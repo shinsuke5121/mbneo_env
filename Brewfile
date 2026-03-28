@@ -35,7 +35,8 @@ cask "xcode"                 # iOS / macOS 開発 (App Store 経由推奨)
 # ----------------------------------------
 brew "mise"                  # polyglot バージョンマネージャ (asdf 互換・fnm/pyenv 代替)
 brew "pnpm"                  # 高速パッケージマネージャ
-# bun は scripts/setup_node.sh で個別インストール
+# bun・Claude Code は scripts/setup_node.sh で Node インストール後にセットアップ
+# Claude Code: npm install -g @anthropic-ai/claude-code
 
 # ----------------------------------------
 # バックエンド・その他言語

@@ -37,9 +37,18 @@ pnpm add -g typescript ts-node
 pnpm add -g @antfu/ni    # ni/nr/nu コマンド (npm/pnpm/bun を自動判別)
 
 echo ""
+echo "==> Claude Code をインストール..."
+npm install -g @anthropic-ai/claude-code
+echo "Claude Code: $(claude --version)"
+
+echo ""
 echo "Done."
 echo ""
+echo "Claude Code のセットアップ:"
+echo "  claude         # 初回起動で Anthropic アカウント認証"
+echo "  claude --help  # コマンド一覧"
+echo ""
 echo "プロジェクトごとのバージョン指定例:"
-echo "  cd ~/Dev/projects/web/my-app"
+echo "  cd ~/Developer/React/my-app"
 echo "  mise use node@22    # .mise.toml を自動生成"
 echo "  mise use python@3.11"
