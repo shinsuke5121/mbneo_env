@@ -4,7 +4,6 @@ MacBook Neo の開発環境構成。以下の用途を想定:
 
 - **BTO Windows / Pi5 NAS クライアント** (SSH, RDP, SMB/NFS)
 - **React / Web アプリ開発**
-- **macOS / iOS アプリ開発**
 
 ## ディレクトリ構成
 
@@ -14,7 +13,6 @@ MacBook Neo の開発環境構成。以下の用途を想定:
 ~/
 ├── Developer/              # 開発作業のルート
 │   ├── React/              # React / Next.js など Web フロントエンド
-│   ├── Mobile/             # macOS / iOS アプリ
 │   ├── Lab/                # 実験・検証・サンプルコード
 │   ├── Config/             # dotfiles・設定ファイルのバックアップ
 │   └── Scripts/            # 自作自動化スクリプト

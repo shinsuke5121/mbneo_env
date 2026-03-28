@@ -15,7 +15,7 @@
 | **Cursor** | VS Code ベースのAI統合エディタ。Claude対応 | ★★★ |
 | VS Code | 最も普及。拡張が豊富 | ★★★ |
 | Zed | Rust製・高速。マルチプレイヤー機能あり | ★★☆ |
-| Xcode | iOS/macOS 開発必須 | ★★★ |
+| Xcode | iOS/macOS 開発が必要になったときに追加 | — |
 
 ## バージョン管理 (ランタイム)
 

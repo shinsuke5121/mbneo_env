@@ -28,7 +28,7 @@ brew "jq"                    # JSON 処理
 # ----------------------------------------
 cask "cursor"                # AI コードエディタ (VS Code ベース)
 # cask "visual-studio-code"  # VS Code (どちらか選択)
-cask "xcode"                 # iOS / macOS 開発 (App Store 経由推奨)
+# cask "xcode"               # iOS / macOS 開発が必要になったときに追加
 
 # ----------------------------------------
 # ランタイムバージョン管理 (Node / Python / Ruby / Go など一元管理)

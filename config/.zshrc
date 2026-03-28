@@ -51,7 +51,6 @@ alias gl='git log --oneline --graph --decorate'
 # ----------------------------------------
 alias dev='cd ~/Developer'
 alias react='cd ~/Developer/React'
-alias mobile='cd ~/Developer/Mobile'
 alias lab='cd ~/Developer/Lab'
 
 # ----------------------------------------

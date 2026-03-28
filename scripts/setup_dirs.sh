@@ -7,7 +7,6 @@ set -e
 echo "==> ディレクトリ構造を作成..."
 
 mkdir -p ~/Developer/React      # Web フロントエンド (React / Next.js)
-mkdir -p ~/Developer/Mobile     # iOS / macOS アプリ
 mkdir -p ~/Developer/Lab        # 実験・検証・サンプルコード
 mkdir -p ~/Developer/Config     # dotfiles・設定ファイルのバックアップ
 mkdir -p ~/Developer/Scripts    # 自作自動化スクリプト
