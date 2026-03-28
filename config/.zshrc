@@ -6,9 +6,9 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ----------------------------------------
-# fnm (Node.js バージョン管理)
+# mise (polyglot バージョンマネージャ: Node / Python / Go など)
 # ----------------------------------------
-eval "$(fnm env --use-on-cd --shell zsh)"
+eval "$(mise activate zsh)"
 
 # ----------------------------------------
 # starship プロンプト
@@ -92,7 +92,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export EDITOR="cursor --wait"
 # export EDITOR="code --wait"  # VS Code の場合
 
-# ----------------------------------------
-# PATH
-# ----------------------------------------
-export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
+# Python は mise で管理するため python@3.12 の手動 PATH 設定は不要

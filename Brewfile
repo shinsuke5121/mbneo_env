@@ -31,18 +31,17 @@ cask "cursor"                # AI コードエディタ (VS Code ベース)
 cask "xcode"                 # iOS / macOS 開発 (App Store 経由推奨)
 
 # ----------------------------------------
-# Node.js / フロントエンド開発
+# ランタイムバージョン管理 (Node / Python / Ruby / Go など一元管理)
 # ----------------------------------------
-brew "fnm"                   # Node.js バージョン管理 (nvm より高速)
+brew "mise"                  # polyglot バージョンマネージャ (asdf 互換・fnm/pyenv 代替)
 brew "pnpm"                  # 高速パッケージマネージャ
 # bun は scripts/setup_node.sh で個別インストール
 
 # ----------------------------------------
 # バックエンド・その他言語
 # ----------------------------------------
-brew "python@3.12"
 brew "uv"                    # Python パッケージ管理 (pip の代替)
-brew "rustup"                # Rust
+brew "rustup"                # Rust (mise でも管理可能だが rustup が安定)
 
 # ----------------------------------------
 # コンテナ・仮想化

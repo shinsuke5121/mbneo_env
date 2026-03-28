@@ -1,0 +1,15 @@
+# ~/.mise.toml - mise グローバル設定
+# mise use --global で自動更新されるファイル
+# プロジェクトごとに ~/Dev/projects/xxx/.mise.toml を作ると自動でバージョンが切り替わる
+
+[tools]
+node = "lts"          # Node.js LTS (プロジェクト側で上書き可)
+python = "3.12"       # Python
+
+# 必要に応じて追加:
+# go = "latest"
+# ruby = "3.3"
+# java = "temurin-21"
+
+[settings]
+experimental = true   # 新機能を有効化

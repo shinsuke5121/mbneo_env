@@ -1,25 +1,27 @@
 #!/bin/bash
-# Node.js 環境のセットアップ (fnm + pnpm + bun)
+# ランタイム環境のセットアップ (mise + pnpm + bun)
+# mise が Node.js / Python などのバージョン管理を一元担当
 
 set -e
 
-# fnm が入っていなければエラー
-if ! command -v fnm &> /dev/null; then
-  echo "fnm が見つかりません。先に brew install fnm を実行してください。"
+# mise が入っていなければエラー
+if ! command -v mise &> /dev/null; then
+  echo "mise が見つかりません。先に brew install mise を実行してください。"
   exit 1
 fi
 
-echo "==> Node.js LTS をインストール..."
-fnm install --lts
-fnm use lts-latest
-fnm default lts-latest
+echo "==> mise で Node.js LTS をインストール..."
+mise use --global node@lts
+
+echo "==> mise で Python 3.12 をインストール..."
+mise use --global python@3.12
 
 NODE_VERSION=$(node -v)
-NPM_VERSION=$(npm -v)
-echo "Node: $NODE_VERSION / npm: $NPM_VERSION"
+PYTHON_VERSION=$(python --version)
+echo "Node: $NODE_VERSION / Python: $PYTHON_VERSION"
 
+echo ""
 echo "==> pnpm のセットアップ..."
-# pnpm は Brewfile でインストール済みのはず
 pnpm --version
 
 echo "==> bun をインストール..."
@@ -35,5 +37,9 @@ pnpm add -g typescript ts-node
 pnpm add -g @antfu/ni    # ni/nr/nu コマンド (npm/pnpm/bun を自動判別)
 
 echo ""
-echo "Done. Node.js 環境が整いました。"
-echo "新しいプロジェクトは ~/Dev/projects/web/ 以下に作成することを推奨します。"
+echo "Done."
+echo ""
+echo "プロジェクトごとのバージョン指定例:"
+echo "  cd ~/Dev/projects/web/my-app"
+echo "  mise use node@22    # .mise.toml を自動生成"
+echo "  mise use python@3.11"
