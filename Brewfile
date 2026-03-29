@@ -51,7 +51,8 @@ cask "orbstack"              # Docker 互換。8GB RAM 環境では Docker Deskt
 # ----------------------------------------
 # リモート接続 (BTO Windows / Pi5 NAS クライアント)
 # ----------------------------------------
-cask "microsoft-remote-desktop"  # RDP クライアント (Windows) - 標準的な操作向け
+# microsoft-remote-desktop は App Store からインストール (Homebrew Cask は非推奨)
+# mas "Microsoft Remote Desktop", id: 1295203466
 cask "parsec"                # 低遅延リモートデスクトップ。Windows のスペックを活かした描画に優れる
 brew "openssh"               # SSH クライアント
 cask "cyberduck"             # SFTP / SMB / S3 ファイル転送 (無料)
