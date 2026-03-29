@@ -66,7 +66,8 @@ cask "macfuse"               # sshfs の依存 (旧: osxfuse)
 brew "mosh"                  # モバイル回線でも安定した SSH
 brew "nmap"                  # ネットワークスキャン
 brew "tailscale"             # ゼロコンフィグ VPN (Windows・Pi5 と連携)
-cask "wireguard"             # WireGuard VPN クライアント
+# WireGuard は App Store からインストール (mas で自動化するなら下行を有効化)
+# mas "WireGuard", id: 1451685025
 
 # ----------------------------------------
 # 生産性・ユーティリティ
