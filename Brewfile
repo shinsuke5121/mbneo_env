@@ -103,5 +103,4 @@ cask "discord"
 # Mac App Store アプリ (mas)
 # ----------------------------------------
 # mas "Xcode", id: 497799835          # Xcode (Homebrewより安定)
-mas "Lungo", id: 1276293613            # スリープ防止
-mas "Amphetamine", id: 937984704       # スリープ防止 (alt)
+mas "Amphetamine", id: 937984704       # スリープ防止
