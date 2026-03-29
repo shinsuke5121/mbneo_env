@@ -57,8 +57,8 @@ cask "parsec"                # 低遅延リモートデスクトップ。Windows
 brew "openssh"               # SSH クライアント
 cask "cyberduck"             # SFTP / SMB / S3 ファイル転送 (無料)
 # cask "forklift"            # 有料だが高機能。NAS への大量ファイル転送に向く
-brew "sshfs"                 # SFTP をファイルシステムとしてマウント
-cask "macfuse"               # sshfs の依存 (旧: osxfuse)
+# brew "sshfs"               # チェックサムエラーで不安定。Cyberduck / Finder SMB で代替
+# cask "macfuse"             # sshfs が不要なため保留
 
 # ----------------------------------------
 # ネットワーク・セキュリティ

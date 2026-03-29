@@ -56,8 +56,8 @@ alias lab='cd ~/Developer/Lab'
 # ----------------------------------------
 # エイリアス - Pi5 NAS マウント
 # ----------------------------------------
-alias mount-nas='sshfs pi5:/mnt/data ~/Mounts/nas -o reconnect,follow_symlinks,defer_permissions'
-alias umount-nas='diskutil unmount ~/Mounts/nas'
+# NAS アクセス: Cyberduck (SFTP) または Finder の「サーバへ接続」(SMB) を使用
+# alias mount-nas='sshfs pi5:/mnt/data ~/Mounts/nas ...'  # sshfs は現在不安定なため保留
 alias nas='cd ~/Mounts/nas'
 
 # Pi5 への rsync バックアップ例
