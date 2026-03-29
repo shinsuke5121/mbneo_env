@@ -78,6 +78,7 @@ cask "1password"             # パスワードマネージャ
 # cask "bitwarden"           # 無料の代替
 cask "hiddenbar"             # メニューバー整理
 cask "stats"                 # システムリソースモニタ (無料)
+cask "aldente"               # バッテリー充電上限管理。長期利用時のバッテリー劣化を防ぐ
 cask "shottr"                # スクリーンショット・注釈ツール。エビデンス残しに優秀 (無料)
 cask "cleanmymac"            # システムクリーナ (有料)
 
