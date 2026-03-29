@@ -14,15 +14,11 @@ Host *
 # ----------------------------------------
 # Pi5 NAS
 # ----------------------------------------
-Host pi5
+Host nasbi
   HostName 192.168.x.x          # Pi5 の IP アドレス (固定IP推奨)
-  User pi                       # ユーザー名
+  User shin                     # ユーザー名
   Port 22
   # Tailscale 経由の場合は HostName を Tailscale IP (100.x.x.x) に変更
-
-# Pi5 への SSHFS マウント用エイリアスは ~/.zshrc に定義
-# alias mount-nas='sshfs pi5:/mnt/data ~/Mounts/nas -o reconnect,follow_symlinks'
-# alias umount-nas='umount ~/Mounts/nas'
 
 # ----------------------------------------
 # BTO Windows (SSH サーバが有効な場合)
